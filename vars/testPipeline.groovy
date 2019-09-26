@@ -1,4 +1,4 @@
-#!/usr/bin/env groovy
+#!groovy
 
 // vars/testPipeline.groovy
 
