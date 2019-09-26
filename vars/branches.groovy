@@ -2,7 +2,7 @@
 
 import groovy.json.JsonSlurper;
 
-def call (String repoUrl) {
+def call () {
 
     try {
 
@@ -11,8 +11,8 @@ def call (String repoUrl) {
         //Getting branches
         //URL apiUrl = "https://api.github.com/repos/mmwebaze/jenkins_demo/branches".toURL();
         //Getting tags
-        //URL apiUrl = "https://api.github.com/repos/mmwebaze/jenkins_demo/tags".toURL();
-        URL apiUrl = "${repoUrl}".toURL();
+        URL apiUrl = "https://api.github.com/repos/mmwebaze/jenkins_demo/tags".toURL();
+        //URL apiUrl = "${repoUrl}".toURL();
         List json = new JsonSlurper().parse(apiUrl.newReader());
 
         for (repo in json) {
