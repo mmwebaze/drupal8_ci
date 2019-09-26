@@ -2,6 +2,6 @@
 
 // vars/testPipeline.groovy
 
-def call () {
-    echo "Jenkins job is successful."
+def call (String name) {
+    echo "Jenkins job is successful {name}."
 }
